@@ -1,0 +1,11 @@
+artifact_location: file:///Users/himanshusharma/Coding/Projects/Telo Customer Churn
+  ML/mlruns/903599284137618157/models/m-2586c6835cb84c088f581b0f888326e2/artifacts
+creation_timestamp: 1780232654968
+experiment_id: '903599284137618157'
+last_updated_timestamp: 1780232656729
+model_id: m-2586c6835cb84c088f581b0f888326e2
+model_type: null
+name: model
+source_run_id: 0e7e52b3c2b44c18919b3ed1782263f5
+status: 2
+status_message: null

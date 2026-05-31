@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/himanshusharma/Coding/Projects/Telo Customer Churn ML/mlruns/903599284137618157/7554ea37b7774d0fb232efbd80009f96/artifacts
+end_time: 1780232250895
+entry_point_name: ''
+experiment_id: '903599284137618157'
+lifecycle_stage: active
+run_id: 7554ea37b7774d0fb232efbd80009f96
+run_name: ambitious-bear-753
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780232250892
+status: 4
+tags: []
+user_id: himanshusharma

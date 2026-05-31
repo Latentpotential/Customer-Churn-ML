@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/himanshusharma/Coding/Projects/Telo Customer Churn ML/mlruns/903599284137618157/0e7e52b3c2b44c18919b3ed1782263f5/artifacts
+end_time: 1780232656733
+entry_point_name: ''
+experiment_id: '903599284137618157'
+lifecycle_stage: active
+run_id: 0e7e52b3c2b44c18919b3ed1782263f5
+run_name: enchanting-hen-865
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780232654670
+status: 3
+tags: []
+user_id: himanshusharma

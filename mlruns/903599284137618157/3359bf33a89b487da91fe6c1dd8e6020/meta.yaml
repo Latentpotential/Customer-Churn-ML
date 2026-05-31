@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/himanshusharma/Coding/Projects/Telo Customer Churn ML/mlruns/903599284137618157/3359bf33a89b487da91fe6c1dd8e6020/artifacts
+end_time: 1780232521565
+entry_point_name: ''
+experiment_id: '903599284137618157'
+lifecycle_stage: active
+run_id: 3359bf33a89b487da91fe6c1dd8e6020
+run_name: able-crab-798
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780232519609
+status: 3
+tags: []
+user_id: himanshusharma

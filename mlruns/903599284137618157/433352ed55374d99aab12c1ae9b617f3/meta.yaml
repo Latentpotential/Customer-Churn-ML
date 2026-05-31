@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/himanshusharma/Coding/Projects/Telo Customer Churn ML/mlruns/903599284137618157/433352ed55374d99aab12c1ae9b617f3/artifacts
+end_time: 1780232443011
+entry_point_name: ''
+experiment_id: '903599284137618157'
+lifecycle_stage: active
+run_id: 433352ed55374d99aab12c1ae9b617f3
+run_name: amazing-croc-859
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780232440900
+status: 3
+tags: []
+user_id: himanshusharma

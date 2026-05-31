@@ -1,0 +1,22 @@
+artifact_path: file:///Users/himanshusharma/Coding/Projects/Telo Customer Churn ML/mlruns/903599284137618157/models/m-6f5dc76979994f9599535b6050b0e5dd/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.14.5
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.2.0
+mlflow_version: 3.12.0
+model_id: m-6f5dc76979994f9599535b6050b0e5dd
+model_size_bytes: 247167
+model_uuid: m-6f5dc76979994f9599535b6050b0e5dd
+prompts: null
+run_id: 433352ed55374d99aab12c1ae9b617f3
+utc_time_created: '2026-05-31 13:00:41.077220'

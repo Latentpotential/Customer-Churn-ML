@@ -1,0 +1,9 @@
+artifact_location: file:///Users/himanshusharma/Coding/Projects/Telo Customer Churn
+  ML/mlruns/903599284137618157
+creation_time: 1780232250855
+experiment_id: '903599284137618157'
+last_update_time: 1780232250855
+lifecycle_stage: active
+name: Telco Churn - XGBoost
+trace_location: null
+workspace: default
