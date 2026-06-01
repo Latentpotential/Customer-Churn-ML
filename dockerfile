@@ -7,11 +7,12 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # 3. Copy only dependency file first (for Docker caching)
-COPY requirements.txt .
+# Slim serving deps (not the full dev requirements.txt) — see requirements-serve.txt.
+COPY requirements-serve.txt .
 
 # 4. Install Python dependencies (add curl if you use MLflow local tracking URI)
 RUN pip install --upgrade pip \
-    && pip install -r requirements.txt \
+    && pip install -r requirements-serve.txt \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # 5. Copy the entire project into the image

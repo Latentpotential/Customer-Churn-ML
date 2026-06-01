@@ -1,0 +1,25 @@
+# Slim dependency set for the FastAPI/Gradio serving image (used by dockerfile).
+# The full dev environment lives in requirements.txt; this file is only what the
+# container needs to LOAD the model and SERVE predictions.
+#
+# Pinned to match the model logged by MLflow (see the model's artifacts/
+# requirements.txt) so unpickling stays compatible. All pins have cp312 wheels,
+# so the build needs no compiler — keep the base image at python:3.12-slim.
+
+# --- model load + inference (from the MLflow-logged model requirements) ---
+mlflow==3.12.0
+cloudpickle==3.1.2
+numpy==1.26.4
+pandas==2.3.3
+pyarrow==23.0.1
+scikit-learn==1.8.0
+scipy==1.17.1
+xgboost==3.2.0
+psutil==7.2.2
+
+# --- serving stack ---
+fastapi==0.136.3
+uvicorn==0.48.0
+pydantic==2.13.4
+python-multipart==0.0.30
+gradio==6.15.2
