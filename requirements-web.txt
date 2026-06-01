@@ -1,0 +1,9 @@
+# Web-serving stack for the serving image (pass 2 of 2).
+# Installed AFTER requirements-serve.txt so gradio is free to upgrade starlette to
+# >=1 (it lands on 1.2.x). pip will print a warning that mlflow-skinny wants
+# starlette<1 — that's expected and harmless here (see requirements-serve.txt).
+fastapi==0.136.3
+uvicorn==0.48.0
+pydantic==2.13.4
+python-multipart==0.0.30
+gradio==6.15.2

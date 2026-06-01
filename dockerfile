@@ -6,13 +6,15 @@ FROM python:3.12-slim
 # 2. Set working directory inside the container
 WORKDIR /app
 
-# 3. Copy only dependency file first (for Docker caching)
-# Slim serving deps (not the full dev requirements.txt) — see requirements-serve.txt.
-COPY requirements-serve.txt .
+# 3. Copy only dependency files first (for Docker caching)
+# Slim serving deps (not the full dev requirements.txt). Two files because
+# mlflow (starlette<1) and gradio (starlette>=1) can't co-resolve in one pass.
+COPY requirements-serve.txt requirements-web.txt ./
 
-# 4. Install Python dependencies (add curl if you use MLflow local tracking URI)
+# 4. Install Python dependencies in two passes (see the requirements files for why).
 RUN pip install --upgrade pip \
     && pip install -r requirements-serve.txt \
+    && pip install -r requirements-web.txt \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # 5. Copy the entire project into the image
