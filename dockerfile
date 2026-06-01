@@ -1,5 +1,7 @@
 # 1. Use the official lightweight Python base image
-FROM python:3.14.5-slim
+# NOTE: 3.12 (not 3.14) — pinned deps like numpy==1.26.4 have no 3.14 wheels,
+# and -slim has no compiler to build them from source.
+FROM python:3.12-slim
 
 # 2. Set working directory inside the container
 WORKDIR /app
